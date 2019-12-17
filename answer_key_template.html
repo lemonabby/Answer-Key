@@ -1,0 +1,28 @@
+<script>
+function postProb(){
+x = document.getElementById('ques.');
+document.getElementById('posting').innerHTML += x.value + " = " + eval(x.value) + "<br>";
+x.value="";
+}
+</script>
+
+<style>
+
+</style>
+
+<body>
+
+<input type="text" id="qN" title="Question Number"> 
+
+<br>
+<br>
+
+<input type="text" id="ques." title="Question"> 
+
+<br>
+<br>
+
+<input type="button" onClick="postProb()" value="submit Problem">
+
+<p id="posting"></p>
+</body>
